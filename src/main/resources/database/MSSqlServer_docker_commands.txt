@@ -1,0 +1,42 @@
+
+
+Docker MS-SqlServer (windows)
+
+References:
+	https://hub.docker.com/r/microsoft/mssql-server-windows-express/
+	
+	https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver15&pivots=cs1-cmd
+	
+	
+
+Pré-Requisits
+	
+	1) Docker engine
+	
+Steps:	
+	
+	1) Prompt Ms-Dos
+	
+		docker run -d -p 1433:1433 -e sa_password=<<SET_PASSWORD_VALUE>> -e ACCEPT_EULA=Y --name SqlServerContainer microsoft/mssql-server-windows-express
+		
+		PS: Password must be strong
+		
+	2) Check Installation
+	
+		docker ps -a
+		
+	3) Connecting to SqlServer	
+	
+		sqlcmd -S localhost,1433 -U SA -P <<SET_PASSWORD_VALUE>>
+
+	4) Check Connection
+		
+		select @@version; 
+		go	
+	
+	
+	5) Configure String Connection App
+	
+		"InvestmentConnection": "Server=localhost,1433;Database=DbInvestment;User Id=SA;Password=<<SET_PASSWORD_VALUE>>",
+	
+		SELECT * FROM  information_schema.tables; go
