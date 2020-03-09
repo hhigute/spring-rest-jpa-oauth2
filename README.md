@@ -154,7 +154,11 @@ To create the tables/structure previous described, you have to follow the steps 
 
 > URL: http://localhost:8082/oauth/token
    
+  Username and Password configured at application.properties 
+   
   ![Alt text](./doc/postman_authorization1.png?raw=true "Authorization") 
+  
+  Username and Password inserted into table "users" (DML.sql)
   
   ![Alt text](./doc/postman_authorization2.png?raw=true "Authorization") 
   
