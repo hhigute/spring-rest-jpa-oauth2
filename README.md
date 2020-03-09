@@ -161,8 +161,9 @@ To create the tables/structure previous described, you have to follow the steps 
 > Username and Password inserted into table "users" (DML.sql)
   
   ![Alt text](./doc/postman_authorization2.png?raw=true "Authorization") 
-  
-- **Execute secured service/API using Access Token (GET) **
+
+	
+- **Execute secured service/API using Access Token (GET)**
    
    
 > URL: http://localhost:8082/api/v1/secured/user
