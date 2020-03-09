@@ -1,4 +1,4 @@
-use DbInvestment;
+use Investment;
 
 --password = password
 INSERT INTO [dbo].[Users] ([Username] ,[Password] ,[Enabled]) VALUES ('user','pwd',1);

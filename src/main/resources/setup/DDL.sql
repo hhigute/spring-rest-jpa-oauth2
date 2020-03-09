@@ -1,6 +1,8 @@
 create database Investment;
+go
 
 use Investment;
+go
 
 -- tables used to save user information that will access the services
 create table dbo.Users (
