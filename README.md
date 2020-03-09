@@ -150,20 +150,21 @@ To create the tables/structure previous described, you have to follow the steps 
 
    I used **Postman** to invoke the services.  
 	
-- _Set Authorization infos to get Access Token (POST) _   
-
-> URL: http://localhost:8082/oauth/token
+- **Set Authorization infos to get Access Token (POST)**   
    
-  Username and Password configured at application.properties 
+	URL: http://localhost:8082/oauth/token
+   
+> Username and Password configured at application.properties 
    
   ![Alt text](./doc/postman_authorization1.png?raw=true "Authorization") 
   
-  Username and Password inserted into table "users" (DML.sql)
+> Username and Password inserted into table "users" (DML.sql)
   
   ![Alt text](./doc/postman_authorization2.png?raw=true "Authorization") 
   
-- _Execute secured service/API using Access Token (GET) _
-
+- **Execute secured service/API using Access Token (GET) **
+   
+   
 > URL: http://localhost:8082/api/v1/secured/user
    
   ![Alt text](./doc/postman_customapi_with_access_token.png?raw=true "Secured API") 
